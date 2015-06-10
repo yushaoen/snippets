@@ -24,6 +24,9 @@ public class AnagramFinderTest extends TestCase {
                 "aaa");
 
         AnagramFinder finder = new AnagramFinder(testList);
+
+        finder.add("bbdd");
+
         Map<String, Set<String>> result = finder.group();
     }
 }
