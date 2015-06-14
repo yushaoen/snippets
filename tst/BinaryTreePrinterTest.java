@@ -30,18 +30,18 @@ public class BinaryTreePrinterTest extends TestCase {
     @Test
     public void test() {
         BinaryTreeNode<Integer> root = new BinaryTreeNode<>(1,
-                                                        new BinaryTreeNode<>(2,
-                                                                             new BinaryTreeNode<>(4,
-                                                                                                  null,
-                                                                                                  null),
-                                                                             new BinaryTreeNode<>(5,
-                                                                                                  new BinaryTreeNode<>(7,
-                                                                                                                       null,
-                                                                                                                       null),
-                                                                                                  null)),
-                                                        new BinaryTreeNode<>(3,
-                                                                             new BinaryTreeNode<>(6, null, null),
-                                                                             null)
+                                                            new BinaryTreeNode<>(2,
+                                                                                 new BinaryTreeNode<>(4,
+                                                                                                      null,
+                                                                                                      null),
+                                                                                 new BinaryTreeNode<>(5,
+                                                                                                      new BinaryTreeNode<>(7,
+                                                                                                                           null,
+                                                                                                                           null),
+                                                                                                      null)),
+                                                            new BinaryTreeNode<>(3,
+                                                                                 new BinaryTreeNode<>(6, null, null),
+                                                                                 null)
         );
 
         BinaryTreePrinter.printByLevel(root, printer);
