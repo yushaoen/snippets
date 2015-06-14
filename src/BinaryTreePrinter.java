@@ -1,5 +1,5 @@
 import concepts.tree.BinaryTreeNode;
-import concepts.tree.concepter.printer.IPrinter;
+import concepts.printer.IPrinter;
 
 import java.util.LinkedList;
 import java.util.Queue;

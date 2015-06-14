@@ -1,6 +1,6 @@
 import concepts.tree.BinaryTreeNode;
-import concepts.tree.concepter.printer.ArrayPrinter;
-import concepts.tree.concepter.printer.SystemPrinter;
+import concepts.printer.ArrayPrinter;
+import concepts.printer.SystemPrinter;
 import junit.framework.TestCase;
 import org.junit.Test;
 
