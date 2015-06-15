@@ -1,3 +1,5 @@
+package concepts.tree;
+
 import concepts.tree.BinaryTreeNode;
 import concepts.printer.ArrayPrinter;
 import concepts.printer.SystemPrinter;

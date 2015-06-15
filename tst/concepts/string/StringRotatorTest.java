@@ -1,3 +1,5 @@
+package concepts.string;
+
 import junit.framework.TestCase;
 
 /**

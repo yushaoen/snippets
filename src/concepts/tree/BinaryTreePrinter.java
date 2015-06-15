@@ -1,4 +1,5 @@
-import concepts.tree.BinaryTreeNode;
+package concepts.tree;
+
 import concepts.printer.IPrinter;
 
 import java.util.LinkedList;

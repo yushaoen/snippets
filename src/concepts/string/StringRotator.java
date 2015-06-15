@@ -1,3 +1,5 @@
+package concepts.string;
+
 /**
  * To rotate a string left/right by X characters. For example,
  * <p>
@@ -6,9 +8,9 @@
  * <p>
  * Usage:
  * <p>
- * StringRotator.rotateLeft("abcd", 1);
+ * concepts.string.StringRotator.rotateLeft("abcd", 1);
  * <p>
- * StringRotator.rotateRight("abcd", 1);
+ * concepts.string.StringRotator.rotateRight("abcd", 1);
  * <p>
  * Created by yushaoen on 6/7/2015.
  */
