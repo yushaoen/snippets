@@ -1,3 +1,5 @@
+package concepts.string;
+
 import java.util.*;
 
 /**
@@ -7,7 +9,7 @@ import java.util.*;
  * Usage:
  *
  * List<String> testList = Arrays.asList("abc", "ccc", "bca");
- * AnagramFinder finder = new AnagramFinder(testList);
+ * concepts.string.AnagramFinder finder = new concepts.string.AnagramFinder(testList);
  * Map<String, Set<String>> result = finder.group();
  *
  * Created by yushaoen on 6/7/2015.
@@ -15,8 +17,8 @@ import java.util.*;
 public class AnagramFinder {
     private final List<String> list;
 
-    public AnagramFinder(List<String> list) {
-        this.list = list;
+    public AnagramFinder() {
+        this.list = new ArrayList<>();
     }
 
     /**
@@ -26,6 +28,15 @@ public class AnagramFinder {
      */
     public void add(String string) {
         this.list.add(string);
+    }
+
+    /**
+     * Add another list for grouping by anagrams
+     *
+     * @param list      a list of new string for grouping
+     */
+    public void add(List<String> list) {
+        this.list.addAll(list);
     }
 
     /**

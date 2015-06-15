@@ -8,7 +8,7 @@ public class DateCalculator {
             throw new IllegalArgumentException("dayOfYear cannot be 0");
         }
 
-        if (dayOfYear == (isLeapYear(year) ? 366 : 365)) {
+        if (dayOfYear > (isLeapYear(year) ? 366 : 365)) {
             throw new IllegalArgumentException(String.format("dayOfYear cannot be > %d. Found: %d",
                                                              isLeapYear(year) ? 366 : 365,
                                                              dayOfYear));
@@ -36,7 +36,7 @@ public class DateCalculator {
         }
 
         int februaryDays = isLeapYear(year) ? 29 : 28;
-        return (month == 2) ? februaryDays : maxMonthDays[month - 1];
+        return (month == 2) ? februaryDays : maxMonthDays[month];
     }
 
     /**
@@ -56,12 +56,11 @@ public class DateCalculator {
     public static boolean isLeapYear(int year) {
         // easier to check if it's a common year, negative the result to
         // check for leap year
-        return !(year % 4 > 0 ||
-                 year % 100 == 0 ||
-                 year % 400 > 0);
+        return year % 4 == 0 && (year % 100 > 0 || year % 400 == 0);
     }
 
     private final static int[] maxMonthDays = new int[]{
+            -1, // DONT_USE
             31, // January
             29, // February
             31, // March
@@ -69,14 +68,15 @@ public class DateCalculator {
             31, // May
             30, // June
             31, // July
-            30, // August
-            31, // September
-            30, // October
-            31, // November
-            30  // December
+            31, // August
+            30, // September
+            31, // October
+            30, // November
+            31  // December
     };
 
     private final static String[] Month = new String[]{
+            "", // DONT_USE
             "January",
             "February",
             "March",

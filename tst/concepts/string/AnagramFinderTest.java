@@ -1,3 +1,5 @@
+package concepts.string;
+
 import junit.framework.TestCase;
 import org.junit.Test;
 
@@ -23,10 +25,16 @@ public class AnagramFinderTest extends TestCase {
                 "bbb",
                 "aaa");
 
-        AnagramFinder finder = new AnagramFinder(testList);
+        AnagramFinder finder = new AnagramFinder();
 
-        finder.add("bbdd");
+        finder.add(testList);
+        finder.add("bdca");
 
         Map<String, Set<String>> result = finder.group();
+        assertEquals(4, result.size());
+        assertEquals(3, result.get("abc").size());
+        assertEquals(4, result.get("abcd").size());
+        assertEquals(1, result.get("aaa").size());
+        assertEquals(1, result.get("bbb").size());
     }
 }
