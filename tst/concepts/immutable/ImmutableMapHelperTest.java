@@ -1,7 +1,7 @@
-//package immutable;
+//package concepts.immutable;
 //
 //import com.google.common.collect.ImmutableMap;
-//import concepts.immutable.ImmutableMapHelper;
+//import concepts.concepts.immutable.ImmutableMapHelper;
 //import foundation.json.JsonMagic;
 //import junit.framework.TestCase;
 //

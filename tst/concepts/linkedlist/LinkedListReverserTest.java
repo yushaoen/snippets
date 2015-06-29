@@ -1,4 +1,4 @@
-package linkedlist;
+package concepts.linkedlist;
 
 import junit.framework.TestCase;
 
